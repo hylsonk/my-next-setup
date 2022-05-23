@@ -7,7 +7,7 @@ interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
 const Heading: React.FC<HeadingProps> = ({
   headingLevel = "p",
   children,
-  className,
+  className
 }) => {
   const Heading = headingLevel
   return <Heading className={className}>{children}</Heading>
