@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^2.8.10",
-    "jest-cucumber": "^3.0.1",
     "next": "12.1.6",
+    "next-translate": "^1.4.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-hook-form": "^7.31.2",

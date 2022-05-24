@@ -2,8 +2,8 @@ import React from "react"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
-import { Button, Input, Label } from "../atoms"
-import Heading from "../atoms/heading/heading"
+import { Button, Input, Label, Heading } from "../atoms"
+import useTranslation from "next-translate/useTranslation"
 
 type FormData = {
   name: string
@@ -18,7 +18,7 @@ const schemaValidation = yup
   })
   .required()
 
-const SampleForm: React.FC = () => {
+const SampleForm = (): JSX.Element => {
   const {
     register,
     setValue,
@@ -31,9 +31,11 @@ const SampleForm: React.FC = () => {
 
   const onSubmit = handleSubmit(data => console.log(data))
 
+  const { t } = useTranslation()
+
   return (
     <div>
-      <Heading headingLevel="h1">Sample Form</Heading>
+      <Heading headingLevel="h1">{t("common:intro")}</Heading>
       <form onSubmit={onSubmit}>
         <Label htmlFor="name">Nome:</Label>
         <Input {...register("name")} />

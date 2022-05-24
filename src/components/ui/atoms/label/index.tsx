@@ -2,7 +2,7 @@ import React from "react"
 
 type LabelProps = JSX.IntrinsicElements["label"]
 
-export const Label: React.FC<LabelProps> = props => {
+export const Label = (props: LabelProps): JSX.Element => {
   return <label {...props}>{props.children}</label>
 }
 
