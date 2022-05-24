@@ -2,6 +2,8 @@
   "locales": ["en", "pt"],
   "defaultLocale": "pt",
   "pages": {
-    "*": ["common"]
+    "*": ["common"],
+    "/404":["error"],
+    "/500":["error"]
   }
 }
