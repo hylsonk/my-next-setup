@@ -1,6 +1,6 @@
 import useTranslation from "next-translate/useTranslation"
 import React from "react"
-import { Heading } from "../components/ui/atoms"
+import { Heading } from "../components/ui"
 
 const Custom500 = (): JSX.Element => {
   const { t } = useTranslation()

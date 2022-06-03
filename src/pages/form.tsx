@@ -2,7 +2,7 @@ import React from "react"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
-import { Button, Input, Label, Heading } from "../atoms"
+import { Button, Input, Label, Heading } from "../components/ui"
 import useTranslation from "next-translate/useTranslation"
 
 type FormData = {
